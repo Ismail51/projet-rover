@@ -50,23 +50,19 @@ function turnRight(rover){
         rover.direction = "N"
     }
 }
-
+console.log(grid.length);
 function moveForward(rover){
-    if(rover.direction == "N"){
-        rover.y += 1
-        rover.x = rover.x 
+    if(rover.direction == "N" && grid.length){
+        rover.y--
     }
-    else if(rover.direction == "S"){
-        rover.y -= 1
-        rover.x = rover.x
+    else if(rover.direction == "S" && grid.length){
+        rover.y ++
     }
-    else if (rover.direction == "E"){
-        rover.y = rover.y
-        rover.x += 1
+    else if (rover.direction == "E" && grid.length){
+        rover.x ++
     }
-    else if (rover.direction == "W"){
-        rover.y = rover.y
-        rover.x -= 1
+    else if (rover.direction == "W" && grid.length){
+        rover.x --
     }
 }
 
